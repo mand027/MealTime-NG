@@ -1,0 +1,17 @@
+{
+    "titulos":{
+        "Titulo0":"Little House of Lights",
+        "Titulo1":"Hipster Lights",
+        "Titulo2":"Christmas Lights",
+        "Titulo3":"Traditional Lights",
+        "Titulo4":"Letter shaped lights",
+        "Titulo5":"Never seen before on the streets",
+        "Titulo6":"Lorem Ipsum"
+        
+    },
+    "parrafo":{
+        "Parrafo0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin. Dictum varius duis at consectetur lorem donec massa sapien.",
+        "Parrafo1":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Parrafo2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+}
