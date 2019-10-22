@@ -50,7 +50,7 @@ const rutas: Routes = [
     component: RegionalSearchComponent,
   },
   {
-    path: 'Recipe',
+    path: 'Recipe/:recipeId',
     component: RecipePageComponent,
   },
   {

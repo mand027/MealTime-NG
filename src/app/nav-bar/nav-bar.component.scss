@@ -16,15 +16,15 @@
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #f1f1f1e7;
     display: block;
     transition: 0.3s;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ffffff;
   }
   
   /* Position and style the close button (top right corner) */
@@ -32,7 +32,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 30px;
     margin-left: 50px;
   }
   
@@ -43,7 +43,6 @@
   }
 
   .openButton{
-      margin-left: 5%;
     font-size:26px;
     cursor:pointer;
   }
@@ -53,9 +52,13 @@
   .logo{
     display: block;
     margin: 0 auto;  
-    height: 8%;
+    height: 95%;
   }
 
   .fix{
       height: 5rem;
+  }
+
+  .col-4{
+    height: 100%;
   }

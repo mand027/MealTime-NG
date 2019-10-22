@@ -1,0 +1,27 @@
+$map-width: 300px;
+$map-height: 400px;
+
+.separator{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.smolLogo{
+    width: 40px;
+    height: 40px;
+}
+
+.mapouter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: $map-height;
+    width: $map-width;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: $map-height;
+    width: $map-width;
+}
