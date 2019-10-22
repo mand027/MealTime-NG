@@ -1,0 +1,27 @@
+
+.log_in_wapper {
+    width: 25%;
+    margin: 40px 37%;
+}
+.row {
+    margin: 10px 0px;
+}
+.btn-success{
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+h3 {
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .log_in_wapper {
+        width: 50%;
+        margin: 40px 30%;
+    }
+
+  }
