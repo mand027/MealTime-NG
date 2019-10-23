@@ -1,17 +1,29 @@
 {
-    "titulos":{
-        "Titulo0":"Little House of Lights",
-        "Titulo1":"Hipster Lights",
-        "Titulo2":"Christmas Lights",
-        "Titulo3":"Traditional Lights",
-        "Titulo4":"Letter shaped lights",
-        "Titulo5":"Never seen before on the streets",
-        "Titulo6":"Lorem Ipsum"
-        
+    "recipeSteps":{
+        "Recipe1":"Choke on it",
+        "Recipe2":"Hipster Lights",
+        "Recipe3":"Christmas Lights",
+        "Recipe4":"Traditional Lights",
+        "Recipe5":"Letter shaped lights",
+        "Recipe6":"Never seen before on the streets",
+        "Recipe7":"Lorem Ipsum"
     },
-    "parrafo":{
-        "Parrafo0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin. Dictum varius duis at consectetur lorem donec massa sapien.",
-        "Parrafo1":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
-        "Parrafo2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    "recipeDescriptions":{
+        "Description1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin. Dictum varius duis at consectetur lorem donec massa sapien.",
+        "Description2":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Description4":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description5":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Description6":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description7":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "recipeTitles":{
+        "Title1":"My Dick",
+        "Title2":"Boobies",
+        "Title3":"Your Dog",
+        "Title4":"My Dick",
+        "Title5":"Boobies",
+        "Title6":"Your Dog",
+        "Title7":"Your Dog"
     }
 }
