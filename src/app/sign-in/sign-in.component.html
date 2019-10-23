@@ -24,14 +24,14 @@
             <input type="password" id="confirmPassword" placeholder="Confirma contrasena">
         </div>
         <div class="row">
-            <a href="HomePage" ><button class="btn btn-success" >GO!!</button></a>
+            <a [routerLink]="['../HomePage']" ><button class="btn btn-success" >GO!!</button></a>
         </div>
 
         <div class="row" style="text-align: center">
             <p>
                 <br>
                 Ya tienes cuenta?
-                <a href="LogIn">ENTRA!!</a>
+                <a [routerLink]="['../LogIn']">ENTRA!!</a>
             </p>
         </div>
 
