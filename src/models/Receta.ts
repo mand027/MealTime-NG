@@ -8,6 +8,7 @@ export class Receta{
         public ingredientes?: string,
         public preparacion?: string,
         public imagen?: string,
-        public video?: Url
+        public video?: Url,
+        public id?: number
     ){}
 }

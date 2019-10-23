@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Receta } from '../../models/Receta';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-new-recipe',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewRecipeComponent implements OnInit {
 
-  constructor() { }
+  submitted = false;
+  receta: Receta;
 
-  ngOnInit() {
+  constructor(private router: Router) {
+    this.receta = new Receta();
   }
 
+  ngOnInit() {
+
+  }
+
+  enviarFormulario(){
+    this.submitted = true;
+    console.log(this.receta);
+    //this.texto = new Text();
+  }
 }

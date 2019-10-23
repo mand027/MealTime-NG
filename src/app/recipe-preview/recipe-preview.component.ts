@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class RecipePreviewComponent implements OnInit {
 
-  submitted = false;
   receta: Receta;
 
   constructor(private router: Router) {
@@ -18,11 +17,5 @@ export class RecipePreviewComponent implements OnInit {
 
   ngOnInit() {
 
-  }
-
-  enviarFormulario(){
-    this.submitted = true;
-    console.log(this.receta);
-    //this.texto = new Text();
   }
 }
