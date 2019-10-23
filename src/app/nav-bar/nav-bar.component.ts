@@ -10,6 +10,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class NavBarComponent implements OnInit {
 
   public lenguaje = 'es';
+  public lang = true;
   public logged = false; //hay que ver como hacer esto global para cambiarlo desde login y que afecte a todo
 
   constructor(private translate: TranslateService, private activateRoute: ActivatedRoute, private _router: Router) {
@@ -23,6 +24,8 @@ ngOnInit() {
 public cambiarLenguaje(lang) {
   this.lenguaje = lang;
   this.translate.use(lang);
+  if(lang == 'es') this.lang = true;
+  if(lang == 'en') this.lang = false;
 }
 
 public logOut(){
