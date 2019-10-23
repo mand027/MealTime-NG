@@ -1,38 +1,47 @@
-<div class="sign_in_wapper">
+<form #formulario="ngForm" class="sign_in_wapper">
+        <div class="row">
+            <div style="display: block; margin: 0 auto; font-size: 30px;">
+                Sign Up
+            </div>
+        </div>
+        <div class="form-group row">
+            <input type="text" class="form-control" id="personTextBox" placeholder="Tu nombre" name="personname" [(ngModel)]="personname">
+        </div>
         
-        <div class="row">
-            <h3>Sign Up</h3>
-            <input type="text" id="name" placeholder="Tu Nombre">
+        <div class="form-group row">
+            <input type="text" class="form-control" id="userTextBox" placeholder="Nombre de usario" name="username" [(ngModel)]="username">
         </div>
-        <div class="row">
-            <input type="text" id="user" placeholder="Nombre de Usuario">
+    
+        <div class="form-group row">
+            <input type="text" class="form-control" id="emailTextBox" placeholder="Email" name="email" [(ngModel)]="email">
         </div>
-        <div class="row">
-            <input type="text" id="email" placeholder="Email">
+        
+        <div class="form-group row">
+                <input type="text" class="form-control" id="countryTextBox" placeholder="Pais" name="country" [(ngModel)]="country">
         </div>
-        <div class="row">
-            <input type="text" id="county" placeholder="Pais">
+
+        <div class="form-group row">
+                <input type="text" class="form-control" id="cityTextBox" placeholder="Ciudad" name="city" [(ngModel)]="city">
         </div>
-        <div class="row">
-            <input type="text" id="city" placeholder="Ciudad">
+        
+        <div class="form-group row">
+            <input type="password" class="form-control" id="passwordTextBox" placeholder="Contrasena" name="password" [(ngModel)]="password">
+        </div>
+        
+        <div class="form-group row">
+                <input type="password" class="form-control" id="confirmationTextBox" placeholder="Confirmar contrasena" name="confirmpassword" [(ngModel)]="confirmpassword">
         </div>
 
         <div class="row">
-            <input type="password" id="password" placeholder="Contrasena">
+                <a [routerLink]="['../HomePage']" ><button class="btn btn-success" >GO!!</button></a>
+            </div>
+    
+            <div class="row" style="text-align: center">
+                <p>
+                    <br>
+                    Ya tienes cuenta?
+                    <a [routerLink]="['../LogIn']">ENTRA!!</a>
+                </p>
         </div>
-        <div class="row">
-            <input type="password" id="confirmPassword" placeholder="Confirma contrasena">
-        </div>
-        <div class="row">
-            <a [routerLink]="['../HomePage']" ><button class="btn btn-success" >GO!!</button></a>
-        </div>
-
-        <div class="row" style="text-align: center">
-            <p>
-                <br>
-                Ya tienes cuenta?
-                <a [routerLink]="['../LogIn']">ENTRA!!</a>
-            </p>
-        </div>
-
-    </div>
+        
+    </form>
