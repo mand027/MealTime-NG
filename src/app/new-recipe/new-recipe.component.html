@@ -1,42 +1,28 @@
-<form #formulario="ngForm" (ngSubmit)="enviarFormulario(formulario.value)" [hidden]='submitted'>
+<form #formulario="ngForm" (ngSubmit)="enviarFormulario(formulario.value)">
 
         <div class="form-group letras">
             <label for="texto">Receta Nueva</label>
             <input type="text" class="form-control" id="texto" placeholder="Enchiladas" name="texto"
-                [(ngModel)]="texto.texto">
+                [(ngModel)]="recipe.nombre">
         </div>
     
-        
         <div class="form-group">
-            <label for="Nombre">Nombre {{alumno.nombre}} </label>
+            <label for="Nombre">Nombre</label>
             <input type="text" class="form-control" id="nombre" placeholder="Armando" name="nombre"
-                [(ngModel)]="alumno.nombre">
+                [(ngModel)]="recipe.nombre">
         </div>
     
         <div class="form-group">
             <label for="aPaterno">Apellido Paterno</label>
             <input type="text" class="form-control" id="aPaterno" placeholder="Hernandez" name="aPaterno"
-                [(ngModel)]="alumno.aPaterno">
+                [(ngModel)]="recipe.nombre">
         </div>
     
         <div class="form-group">
             <label for="aMaterno">Apellido Materno</label>
             <input type="text" class="form-control" id="aMaterno" placeholder="Vargas" name="aMaterno"
-                [(ngModel)]="alumno.aMaterno">
+                [(ngModel)]="recipe.nombre">
         </div>
-    
-        <div class="form-group">
-            <label for="carrera">Carrera</label>
-            <select class="form-control" id="carrera" name="carrera" [(ngModel)]="alumno.carrera">
-                <option></option>
-                <option *ngFor="let carrera of carreras" [value]="carrera">{{carrera}}</option>
-            </select>
-        </div>
-        
         
         <button type="submit" class="btn btn-success" (click)="enviarFormulario();">Enviar</button>
     </form>
-    
-    <div class="letras" [hidden]='!submitted'>
-        Cambio realizado a: {{nuText}}
-    </div>
