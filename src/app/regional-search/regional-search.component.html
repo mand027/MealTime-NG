@@ -1,1 +1,24 @@
-<p>regional-search works!</p>
+<div class="wrapper">
+    <form #formulario = "ngForm">
+        <div>
+            <h2>Estados de Mexico: </h2><br>
+            <label *ngFor="let state of states">
+                <div class="stateWrap"><input type="checkbox" id="{{state}}">{{state}}</div>
+            </label>
+        </div>
+        <div class="row">
+                <a [routerLink]="['../TopRecipes']" ><button class="btn btn-success" >GO!!</button></a>
+        </div>
+    </form>
+</div>
+
+
+<!--
+<input type="checkbox" id="{{state}}">{{state}}
+<input type="checkbox" *ngFor="let state of states" [value]="state"> {{state}}<br>
+        <mat-checkbox *ngFor="let state of states" [value]="state">{{state}}</mat-checkbox>
+        <select class="form-control" id="stateSelect" name="states">
+            <option></option>
+            <option *ngFor="let state of states" [value]="state"> {{state}}</option>
+        </select>    
+-->

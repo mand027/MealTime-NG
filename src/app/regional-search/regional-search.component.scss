@@ -1,0 +1,26 @@
+.wrapper {
+    margin-top: 1rem;
+}
+.stateWrap {
+    width: 284px;
+}
+button{
+    width: 50%;
+    margin: 15px 25%;
+}
+a{
+    width: 100%;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .wrapper {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .stateWrap {
+        width: 125px;
+        margin: 0px 26px;
+    }
+}
