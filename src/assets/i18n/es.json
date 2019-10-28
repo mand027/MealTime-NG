@@ -27,6 +27,8 @@
         "Title7":"Your Dog"
     },
     "userinformation": {
-        "desc": "Sigueme en mi cuenta de twitter"
+        "name": "Junita Perez",
+        "desc": "Sigueme en mi cuenta de twitter",
+        "toRecepies": "Mas de mis recetas"
     }
 }

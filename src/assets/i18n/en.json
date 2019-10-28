@@ -27,6 +27,8 @@
         "Title7":"Your Dog"
     },
     "userinformation": {
-        "desc": "follow me at my twitter account"
+        "name": "Junita Perez",
+        "desc": "follow me at my twitter account",
+        "toRecepies": "More of my recepies"
     }
 }
