@@ -1,6 +1,6 @@
 {
     "recipeSteps":{
-        "Recipe1":"Choke on it",
+        "Recipe1":"Put in the good food",
         "Recipe2":"Hipster Lights",
         "Recipe3":"Christmas Lights",
         "Recipe4":"Traditional Lights",
@@ -18,12 +18,17 @@
         "Description7":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     "recipeTitles":{
-        "Title1":"My Dick",
-        "Title2":"Boobies",
+        "Title1":"My really good food",
+        "Title2":"Good entry to my food",
         "Title3":"Your Dog",
-        "Title4":"My Dick",
-        "Title5":"Boobies",
+        "Title4":"My really good food",
+        "Title5":"My really good food",
         "Title6":"Your Dog",
         "Title7":"Your Dog"
+    },
+    "userinformation": {
+        "name": "Junita Perez",
+        "desc": "follow me at my twitter account",
+        "toRecepies": "More of my recepies"
     }
 }

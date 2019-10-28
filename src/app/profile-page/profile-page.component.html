@@ -1,1 +1,8 @@
-<p>profile-page works!</p>
+<div class="wrapper">
+    <div class="col-3 row">
+        <h2>{{'userinformation.name'|translate}}</h2>
+        <img class="imagenEnBusqueda imgAuthor rounded mx-auto d-block" src="../../assets/chef.jpg" alt="Chef">
+        <p>{{'userinformation.desc'|translate}}</p>
+        <a [routerLink]="['../TopRecipes']" style="text-align: center;">{{'userinformation.toRecepies'|translate}}</a>
+    </div>
+</div>

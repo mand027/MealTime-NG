@@ -1,6 +1,6 @@
 {
     "recipeSteps":{
-        "Recipe1":"Choke on it",
+        "Recipe1":"Buena comida",
         "Recipe2":"Hipster Lights",
         "Recipe3":"Christmas Lights",
         "Recipe4":"Traditional Lights",
@@ -18,12 +18,17 @@
         "Description7":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     "recipeTitles":{
-        "Title1":"My Dick",
-        "Title2":"Boobies",
+        "Title1":"Ricas toritllas",
+        "Title2":"Ricas toritllas",
         "Title3":"Your Dog",
-        "Title4":"My Dick",
-        "Title5":"Boobies",
+        "Title4":"Ricas toritllas",
+        "Title5":"Ricas toritllas",
         "Title6":"Your Dog",
         "Title7":"Your Dog"
+    },
+    "userinformation": {
+        "name": "Junita Perez",
+        "desc": "Sigueme en mi cuenta de twitter",
+        "toRecepies": "Mas de mis recetas"
     }
 }
