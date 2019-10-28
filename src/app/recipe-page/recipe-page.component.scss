@@ -19,7 +19,13 @@
 p {
     text-align: center;
 }
+.imgAuthor {
+    width: 265px;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px){
+    .imgAuthor {
+        width: 370px;
+    }
     .wrapper {
       display: block;
       margin: 0 auto;
