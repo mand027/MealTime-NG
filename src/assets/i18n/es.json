@@ -1,19 +1,4 @@
 {
-<<<<<<< Updated upstream
-    "titulos":{
-        "Titulo0":"La casita de las lucess",
-        "Titulo1":"Serie Hipster",
-        "Titulo2":"Serie Navidad",
-        "Titulo3":"Serie Tradicional",
-        "Titulo4":"Luces en letra",
-        "Titulo5":"Jamas vistas antes en las calles",
-        "Titulo6":"Dolor sit amet"
-    },
-    "parrafo":{
-        "Parrafo0":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida, ullamcorper dui risus sociosqu non sociosqu rhoncus accumsan platea nulla felis dapibus senectus nisl consectetur.",
-        "Parrafo1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Parrafo2":"In tellus integer feugiat scelerisque varius morbi enim. sed do eiusmod tempor incididunt ut labore."
-=======
     "recipeSteps":{
         "Recipe1":"Buena comida",
         "Recipe2":"Hipster Lights",
@@ -43,6 +28,5 @@
     },
     "userinformation": {
         "desc": "Sigueme en mi cuenta de twitter"
->>>>>>> Stashed changes
     }
 }
