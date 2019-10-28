@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream
     "titulos":{
         "Titulo0":"Little House of Lights",
         "Titulo1":"Hipster Lights",
@@ -13,5 +14,36 @@
         "Parrafo0":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin. Dictum varius duis at consectetur lorem donec massa sapien.",
         "Parrafo1":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
         "Parrafo2":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+=======
+    "recipeSteps":{
+        "Recipe1":"Put in the good food",
+        "Recipe2":"Hipster Lights",
+        "Recipe3":"Christmas Lights",
+        "Recipe4":"Traditional Lights",
+        "Recipe5":"Letter shaped lights",
+        "Recipe6":"Never seen before on the streets",
+        "Recipe7":"Lorem Ipsum"
+    },
+    "recipeDescriptions":{
+        "Description1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor id aliquet lectus proin. Dictum varius duis at consectetur lorem donec massa sapien.",
+        "Description2":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description3":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Description4":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description5":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Description6":"Eget mi primis curabitur hac aptent nullam tincidunt accumsan, et gravida consequat class tortor enim at gravida.",
+        "Description7":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "recipeTitles":{
+        "Title1":"My really good food",
+        "Title2":"Good entry to my food",
+        "Title3":"Your Dog",
+        "Title4":"My really good food",
+        "Title5":"My really good food",
+        "Title6":"Your Dog",
+        "Title7":"Your Dog"
+    },
+    "userinformation": {
+        "desc": "follow me at my twitter account"
+>>>>>>> Stashed changes
     }
 }
