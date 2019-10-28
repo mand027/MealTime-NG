@@ -1,0 +1,41 @@
+.row {
+    margin: 15px 0px;
+}
+.wrapper {
+    margin-top: 1rem;
+}
+.col-9 {
+    padding: 0px;
+}
+.ytVideo{
+    margin: 0px 25%;
+}
+.mobile {
+    display: none;
+}
+.imgDish {
+    size: 800px;
+}
+p {
+    text-align: center;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .wrapper {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .imgDish {
+        width: 370px;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: unset;
+    }
+    .ytVideo{
+        margin: auto;
+    }
+
+}

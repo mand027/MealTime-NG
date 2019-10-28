@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row imgRecipe">
     <div class="row imgDish col-9">
         <img class="imgDish" src="../../assets/enchilada.jpg" alt="Enchilada">
@@ -20,3 +21,34 @@
 <div class="row recipe">
     {{'recipeSteps.Recipe1'|translate}}
 </div>
+=======
+<div class="wrapper">
+    <div class="imgAuthor col-3 mobile">
+        <a [routerLink]="['../Profile']"><img class="imagenEnBusqueda rounded mx-auto d-block" src="../../assets/chef.jpg" alt="Chef"></a>
+        <p>{{'userinformation.desc'|translate}}</p>
+    </div>
+    <div class="row imgRecipe">
+        <div class="imgDish col-9">
+            <img class="imgDish" src="../../assets/enchilada.jpg" alt="Enchilada">
+        </div>
+        <div class="imgAuthor col-3 desktop">
+            <a [routerLink]="['../Profile']"><img class="imagenEnBusqueda rounded mx-auto d-block" src="../../assets/chef.jpg" alt="Chef"></a>
+            {{'userinformation.desc'|translate}}
+        </div>
+    </div>
+    <div class="row ytVideo">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xL3dQHepQxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="row information">
+        <div class="row title">
+            {{'recipeTitles.Title1'|translate}}
+        </div>
+        <div class="row description">
+            {{'recipeDescriptions.Description1'|translate}}
+        </div>
+    </div>
+    <div class="row recipe">
+        {{'recipeSteps.Recipe1'|translate}}
+    </div>
+</div>
+>>>>>>> kevin_branch
