@@ -7,6 +7,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ChartsModule } from 'ng2-charts';
 
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -18,6 +19,8 @@ import { RegionalSearchComponent } from './regional-search/regional-search.compo
 import { RecipePreviewComponent } from './recipe-preview/recipe-preview.component';
 import { RecipePageComponent } from './recipe-page/recipe-page.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { StatsComponent } from './stats/stats.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 const rutas: Routes = [
@@ -61,6 +64,10 @@ const rutas: Routes = [
     path: 'TopRecipes', //input desde la barra
     component: RecipeListComponent,
   },
+  {
+    path: 'Stats', //input desde la barra
+    component: StatsComponent,
+  },
 ];
 
 
@@ -76,14 +83,17 @@ const rutas: Routes = [
     RegionalSearchComponent,
     RecipePreviewComponent,
     RecipePageComponent,
-    RecipeListComponent
+    RecipeListComponent,
+    StatsComponent,
   ],
   imports: [
     RouterModule.forRoot(rutas),  //add for routes
     BrowserModule,
+    ChartsModule,
     FormsModule, //add forms
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
