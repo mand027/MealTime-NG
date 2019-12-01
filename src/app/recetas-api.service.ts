@@ -8,7 +8,7 @@ import {Receta} from '../models/Receta';
   providedIn: 'root'
 })
 export class RecetasApiService {
-  RECETA_URL = 'http://127.0.0.1:3000/usuarios';  //cambiar por nuestro LB4
+  RECETA_URL = 'http://127.0.0.1:3000/usuarios';  //cambiar por nuestra direccion de LB4
 
   currentReceta = null;
   creds = null;
@@ -61,9 +61,9 @@ export class RecetasApiService {
   }
 
   patchReceta(receta : Receta):Observable<any>{
-    console.log(this.RECETA_URL+'/'+receta.mail);
+    console.log(this.RECETA_URL+'/'+receta.id);
     return this.http
-      .patch(this.RECETA_URL + '/' + receta.mail, receta, this.httpOptions).pipe(
+      .patch(this.RECETA_URL + '/' + receta.id, receta, this.httpOptions).pipe(
         map(function(res){
           return res;
         }));
