@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from "@angular/router";
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { Receta } from '../../models/Receta';
+import { RecetasApiService } from 'src/app/recetas-api.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListComponent implements OnInit {
 
-  constructor() { }
+  recetas:Receta[];
+
+  constructor(private rest: RecetasApiService) { }
 
   ngOnInit() {
+    this.getEvents();
+  }
+
+  getEvents(){
+    this.rest.getReceta().subscribe(
+    (data: any) => {
+      console.log(data);
+      this.recetas=data;
+      console.log(this.recetas);
+    },
+    (err: any) => {
+        console.log('HTTP Error', err, err.status);
+        alert('No se encontraron eventos');
+   });
   }
 
 }
