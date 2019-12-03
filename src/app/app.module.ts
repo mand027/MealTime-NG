@@ -53,7 +53,7 @@ const rutas: Routes = [
     component: RegionalSearchComponent,
   },
   {
-    path: 'Recipe', //add que te mande a una con un id especifico
+    path: 'Recipe/:id', //add que te mande a una con un id especifico
     component: RecipePageComponent,
   },
   {

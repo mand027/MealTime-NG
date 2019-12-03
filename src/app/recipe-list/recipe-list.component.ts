@@ -13,7 +13,7 @@ export class RecipeListComponent implements OnInit {
 
   recetas:Receta[];
 
-  constructor(private rest: RecetasApiService) { }
+  constructor(private _router: Router, private activateRoute: ActivatedRoute, private rest: RecetasApiService) { }
 
   ngOnInit() {
     this.getEvents();

@@ -1,23 +1,24 @@
 <div class="wrapper">
     <div class="row title">
-        {{'recipeTitles.Title1'|translate}}
+        {{receta.nombre}}
     </div>
     <div class="row imgRecipe">
         <div class="imgDish col-9">
-            <img class="imgDish" src="../../assets/enchladas.jpg" alt="Enchilada">
+            <img class="imgDish" src="../../assets/{{receta.imagen}}" alt="Enchilada">
         </div>
     </div>
     <div class="row information">
         <div class="row description col-6">
-            {{'recipeDescriptions.Description1'|translate}}
+            {{receta.descripcion}}
+            {{receta.ingredientes}}
         </div>
         <div class="imgAuthor col-6">
             <a [routerLink]="['../Profile']"><img class="imagenEnBusqueda imgAuthor rounded mx-auto d-block" src="../../assets/chef.jpg" alt="Chef"></a>
-            <p>{{'userinformation.desc'|translate}}</p>
+            <p>{{receta.autor}}</p>
         </div>
     </div>
     <div class="row recipe">
-        {{'recipeSteps.Recipe1'|translate}}
+        {{receta.preparacion}}
     </div>
     <div class="row ytVideo">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xL3dQHepQxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
