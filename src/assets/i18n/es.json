@@ -1,4 +1,8 @@
 {
+    "Homepage": {
+        "introduction": "Meal Time fue creado con la intención de unir a las personas de una manera nueva, a través de comidas. Te alentamos a encontrar las comidas únicas que otros tienen que ofrecer. ",
+        "signature": "Gracias por parte del equipo d desarrollo de Meal Time"
+    },
     "recipeSteps":{
         "Recipe1":"Buena comida",
         "Recipe2":"Hipster Lights",
