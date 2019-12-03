@@ -1,4 +1,4 @@
-export class Receta{
+export class Usuario{
     constructor(
         public personname?: string,
         public username?: string,

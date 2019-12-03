@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Usuario} from '../../models/Usuario';
+import {UserApiService} from '../user-api.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -15,7 +17,7 @@ export class SignInComponent implements OnInit {
   password: string;
   confirmpassword: string;
 
-  constructor() { }
+  constructor(private rest: UserApiService) { }
 
   ngOnInit() {
   }

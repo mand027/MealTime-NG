@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {LoggingServiceService} from '../logging-service.service';
+import {UserApiService} from '../user-api.service';
 import {NavBarComponent} from '../nav-bar/nav-bar.component';
+import {Usuario} from '../../models/Usuario';
 
 @Component({
   selector: 'app-log-in',
@@ -10,14 +12,16 @@ import {NavBarComponent} from '../nav-bar/nav-bar.component';
   providers: [LoggingServiceService]
 })
 export class LogInComponent implements OnInit {
-  username: string;
+  mail: string;
   password: string;
   public logged = false; //hay que ver como hacer esto global para cambiarlo desde login y que afecte a todo
 
   hardUser = "mando";
   hardPassword = "asd123";
 
-  constructor(private router: Router, private logService: LoggingServiceService) {
+  userModel = new Usuario;
+
+  constructor(private rest: UserApiService, private router: Router, private logService: LoggingServiceService) {
 
    }
 
@@ -25,11 +29,28 @@ export class LogInComponent implements OnInit {
   }
 
   LogIn(){
-    if(this.username == this.hardUser && this.password == this.hardPassword){
       this.logged = true;
-      console.log("logged in!");
+      alert("logged in!");
       this.logged = this.logService.log(this.logged);
-      //this.nav.logged = this.logged;
-    }
+      
   }
+
+  searchUserRequest(){
+    this.rest.getUserById(this.mail).subscribe(
+    (data: any) => {
+      this.rest.setUser(data);
+      console.log(data);
+      if(this.password === data.password){
+        this.LogIn();
+      } else{
+        alert('El usuario o la contraseña son incorrectos');
+      }
+    },
+    (err: any) => {
+      console.log('HTTP Error', err, err.status);
+      alert('El usuario o la contraseña son incorrectos');
+   });
+
+  }
+
 }
