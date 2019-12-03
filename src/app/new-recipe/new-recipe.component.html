@@ -10,6 +10,12 @@
                 [(ngModel)]="receta.nombre">
         </div>
 
+        <div class="form-group letras">
+            <label for="Autor">Nombre del Autor</label>
+            <input type="text" class="form-control" id="Autor" placeholder="Juan Hernandez" name="autor"
+                [(ngModel)]="receta.autor">
+        </div>
+
         <div class="form-group">
             <label for="descripcion">Descripcion</label>
             <input type="text" class="form-control" id="descripcion" placeholder="Son un plato a base de salsa"
@@ -26,6 +32,18 @@
             <label for="preparacion">Preparacion</label>
             <input type="text" class="form-control" id="preparacion" placeholder="1- cortar todo 2-mezclar"
                 name="preparacion" [(ngModel)]="receta.preparacion">
+        </div>
+
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" class="form-control" id="imagen" placeholder="enchiiladas.jpg"
+                name="preparacion" [(ngModel)]="receta.imagen">
+        </div>
+
+        <div class="form-group">
+            <label for="video">Video</label>
+            <input type="text" class="form-control" id="video" placeholder="youtube.com/mireceta"
+                name="preparacion" [(ngModel)]="receta.video">
         </div>
 
         <button type="submit" class="btn btn-success center" (click)="enviarFormulario();">Enviar</button>

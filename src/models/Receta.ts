@@ -1,5 +1,3 @@
-import { Url } from 'url';
-
 export class Receta{
     constructor(
         public nombre?: string,
@@ -8,7 +6,7 @@ export class Receta{
         public ingredientes?: string,
         public preparacion?: string,
         public imagen?: string,
-        public video?: Url,
+        public video?: String,
         public id?: number
     ){}
 }

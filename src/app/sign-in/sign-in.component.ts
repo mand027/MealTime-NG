@@ -25,7 +25,7 @@ export class SignInComponent implements OnInit {
 
 
   postUserRequest(){
-    this.userModel.personname = this.personname;
+    this.userModel.personaname = this.personname;
     this.userModel.username = this.username;
     this.userModel.email = this.email;
     this.userModel.country = this.country;
