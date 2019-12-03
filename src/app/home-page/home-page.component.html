@@ -20,5 +20,9 @@
     <div class="col-2"> <img class="smolLogo rounded mx-auto d-block" src="../../assets/spotify.png" alt="spotify">
     </div>
     <div class="col-8"></div>
-    <div class="col-2"> <img class="smolLogo rounded mx-auto d-block" src="../../assets/random.png" alt="random"> </div>
+    <div class="col-2">
+        <a (click)="randomRecipe()" href="../Recipe/{{random}}">
+            <img class="smolLogo rounded mx-auto d-block" src="../../assets/random.png" alt="random">
+        </a>
+    </div>
 </div>

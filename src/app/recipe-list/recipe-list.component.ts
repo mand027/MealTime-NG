@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from "@angular/router";
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 import { Receta } from '../../models/Receta';
 import { RecetasApiService } from 'src/app/recetas-api.service';
 

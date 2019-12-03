@@ -76,4 +76,11 @@ export class RecetasApiService {
           return res;
         }));
   }
+
+  countRecetas(): Observable<any>{
+    return this.http.get(this.RECETA_URL + '/count', this.httpOptions).pipe(
+    map(function (res) {
+      return res;
+    }));
+  }
 }
