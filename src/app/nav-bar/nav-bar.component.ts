@@ -37,7 +37,7 @@ export class NavBarComponent implements OnInit {
   }
 
   ngOnInit() {
-
+    this.logged = this.logService.log(this.logged);
   }
 
   changeState() {
