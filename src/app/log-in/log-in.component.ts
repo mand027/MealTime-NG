@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 import {LoggingServiceService} from '../logging-service.service';
 import {UserApiService} from '../user-api.service';
 import {NavBarComponent} from '../nav-bar/nav-bar.component';
-import {Usuario} from '../../models/Usuario';
+import {Usuario} from '../../models/usuario';
 
 @Component({
   selector: 'app-log-in',
