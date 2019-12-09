@@ -3,6 +3,23 @@
         "introduction": "Meal Time was created with the intention of bringing people together in a new way, thorugh meals. We encourage you to find for the unique meals others have to offer.",
         "signature": "Thank you from the dev team of Meal Time"
     },
+    "newRecepi": {
+        "recipe_name": "Recipe Name",
+        "author_name": "Chef's Name",
+        "desc": "Description",
+        "type": "Type",
+        "ingrid": "Ingridients",
+        "steps": "Steps",
+        "img" :"Image",
+        "video": "video",
+        "location": "Ubicacion",
+        "recipe_types": {
+            "Desert": "Desert",
+            "Breakfast": "Breakfast",
+            "Lunch": "Lunch",
+            "Dinner": "Dinner"
+        }
+    },
     "recipeSteps":{
         "Recipe1":"Put in the good food",
         "Recipe2":"Hipster Lights",

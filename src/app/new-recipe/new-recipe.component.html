@@ -5,46 +5,60 @@
     <form class="center widthFix" #formulario="ngForm" (ngSubmit)="enviarFormulario(formulario.value)">
 
         <div class="form-group letras">
-            <label for="nombre">Nombre de la Receta</label>
+            <label for="nombre"> {{'newRecepi.recipe_name'|translate}} </label>
             <input type="text" class="form-control" id="nombre" placeholder="Enchiladas" name="nombre"
                 [(ngModel)]="receta.nombre">
         </div>
 
         <div class="form-group letras">
-            <label for="Autor">Nombre del Autor</label>
+            <label for="Autor">{{'newRecepi.author_name'|translate}}</label>
             <input type="text" class="form-control" id="Autor" placeholder="Juan Hernandez" name="autor"
                 [(ngModel)]="receta.autor">
         </div>
 
         <div class="form-group">
-            <label for="descripcion">Descripcion</label>
+            <label for="descripcion">{{'newRecepi.desc'|translate}}</label>
             <input type="text" class="form-control" id="descripcion" placeholder="Son un plato a base de salsa"
                 name="descripcion" [(ngModel)]="receta.descripcion">
         </div>
 
         <div class="form-group">
-            <label for="ingredientes">ingredientes</label>
+            <label for="ingredientes">{{'newRecepi.type'|translate}}</label><br>
+            <select class="form-control" id="type" name="type" [(ngModel)]="receta.type">
+                <option></option>
+                <option *ngFor="let item of recepi_type" [value]="item"> {{item}} </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="ingredientes">{{'newRecepi.ingrid'|translate}}</label>
             <input type="text" class="form-control" id="ingredientes" placeholder="1kg de tomate" name="ingredientes"
                 [(ngModel)]="receta.ingredientes">
         </div>
 
         <div class="form-group">
-            <label for="preparacion">Preparacion</label>
+            <label for="preparacion">{{'newRecepi.steps'|translate}}</label>
             <input type="text" class="form-control" id="preparacion" placeholder="1- cortar todo 2-mezclar"
                 name="preparacion" [(ngModel)]="receta.preparacion">
         </div>
 
         <div class="form-group">
-            <label for="imagen">Imagen</label>
+            <label for="imagen">{{'newRecepi.img'|translate}}</label>
             <input type="text" class="form-control" id="imagen" placeholder="enchiiladas.jpg"
                 name="preparacion" [(ngModel)]="receta.imagen">
         </div>
 
         <div class="form-group">
-            <label for="video">Video</label>
+            <label for="video">{{'newRecepi.video'|translate}}</label>
             <input type="text" class="form-control" id="video" placeholder="youtube.com/mireceta"
                 name="preparacion" [(ngModel)]="receta.video">
         </div>
+
+        <div class="form-group">
+                <label for="video">{{'newRecepi.location'|translate}}</label>
+                <input type="text" class="form-control" id="location" placeholder="279 Bedford Ave, Brooklyn, NY 11211, USA"
+                    name="location" [(ngModel)]="receta.remindAtAddress">
+            </div>
 
         <button type="submit" class="btn btn-success center">Enviar</button>
     </form>

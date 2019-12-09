@@ -3,6 +3,23 @@
         "introduction": "Meal Time fue creado con la intención de unir a las personas de una manera nueva, a través de comidas. Te alentamos a encontrar las comidas únicas que otros tienen que ofrecer. ",
         "signature": "Gracias por parte del equipo d desarrollo de Meal Time"
     },
+    "newRecepi": {
+        "recipe_name": "Nombre de la receta",
+        "author_name": "Nombre del chef",
+        "desc": "Descripción",
+        "type": "Tipo",
+        "ingrid": "Ingredietnes",
+        "steps": "Pasos",
+        "img" :"Imagen",
+        "video": "Video",
+        "location": "Location",
+        "recipe_types": {
+            "Desert": "Postre",
+            "Breakfast": "Desayuno",
+            "Lunch": "Lunch",
+            "Dinner": "Cena"
+        }
+    },
     "recipeSteps":{
         "Recipe1":"Buena comida",
         "Recipe2":"Hipster Lights",

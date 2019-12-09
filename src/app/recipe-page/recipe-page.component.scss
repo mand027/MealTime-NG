@@ -1,9 +1,11 @@
+$map-width: 300px;
+$map-height: 400px;
 .row {
-    margin: 15px 0px;
+    margin: 15px 14%;
 }
 .title{
     text-align: center;
-    margin-left: 47%;
+    margin: 0px 45%;
 }
 
 .wrapper {
@@ -13,14 +15,14 @@
     padding: 0px;
 }
 .ytVideo{
-    margin: 0px 25%;
+    margin: 20px 31%;
 }
 .mobile {
     display: none;
 }
 .imgDish {
     size: 800px;
-    margin-left: 13%;
+    margin: 0px 23%;
 }
 p {
     text-align: center;
@@ -28,7 +30,25 @@ p {
 .imgAuthor {
     width: 265px;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px){
+
+.mapouter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    height: $map-height;
+    width: $map-width;
+}
+
+.mapouter {
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+    height: $map-height;
+    width: $map-width;
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 900px){
     .imgAuthor {
         width: 370px;
     }
@@ -39,6 +59,7 @@ p {
     }
     .imgDish {
         width: 370px;
+        margin: 0px -4%;
     }
     .desktop {
         display: none;
@@ -47,7 +68,13 @@ p {
         display: unset;
     }
     .ytVideo{
-        margin: auto;
+        margin: 5px 20%;
+    }
+    .mapouter {
+        margin: 25px 20%;
+    }
+    .row {
+        margin: 15px 3%;
     }
 
 }
