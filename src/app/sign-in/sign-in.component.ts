@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Usuario} from '../../models/Usuario';
 import {UserApiService} from '../user-api.service';
+//import {islogged} from '../globals';
 
 @Component({
   selector: 'app-sign-in',

@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { LoggingServiceService } from '../logging-service.service';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import {islogged} from '../globals';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -32,12 +33,12 @@ export class NavBarComponent implements OnInit {
   public lang = true;
   public logged = false; //hay que ver como hacer esto global para cambiarlo desde login y que afecte a todo
 
-  constructor(private translate: TranslateService, private activateRoute: ActivatedRoute, private _router: Router, private logService: LoggingServiceService) {
+  constructor(private translate: TranslateService, private activateRoute: ActivatedRoute, private _router: Router, private logService: LoggingServiceService, private usersService:UserService) {
     this.translate.setDefaultLang(this.lenguaje);
   }
 
   ngOnInit() {
-    this.logged = this.logService.log(this.logged);
+    this.usersService.cast.subscribe(u => this.logged = u);
   }
 
   changeState() {
@@ -53,7 +54,7 @@ export class NavBarComponent implements OnInit {
 
   public logOut() {
     this.logged = false;
-    this.logged = this.logService.log(this.logged);
+    this.usersService.editlogged(this.logged);
   }
 
 }

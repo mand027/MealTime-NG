@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {LoggingServiceService} from '../logging-service.service';
 import {UserApiService} from '../user-api.service';
-import {NavBarComponent} from '../nav-bar/nav-bar.component';
+import {setlogg} from '../globals';
 import {Usuario} from '../../models/Usuario';
+import {UserService} from '../user.service';
 
 @Component({
   selector: 'app-log-in',
@@ -21,18 +22,18 @@ export class LogInComponent implements OnInit {
 
   userModel = new Usuario;
 
-  constructor(private rest: UserApiService, private router: Router, private logService: LoggingServiceService) {
+  constructor(private rest: UserApiService, private router: Router, private logService: LoggingServiceService, private usersService:UserService) {
 
    }
 
   ngOnInit() {
+    this.usersService.cast.subscribe(u => this.logged = u);
   }
 
   LogIn(){
       this.logged = true;
       alert("logged in!");
-      this.logged = this.logService.log(this.logged);
-      
+      this.usersService.editlogged(this.logged);
   }
 
   searchUserRequest(){
